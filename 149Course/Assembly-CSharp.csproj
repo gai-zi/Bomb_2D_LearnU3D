@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Bomb\Bomb.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Player\JumpFX.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
@@ -603,91 +604,91 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.3f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>F:/U3D/____MADE/149Course/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
