@@ -1,5 +1,2 @@
 # Bomb_2D_LearnU3D
- 
-
-## 通过[Unity中文课堂 (u3d.cn)](https://learn.u3d.cn/)教程学习
-
+ 学习实践项目(设计模式、面向对象、引擎新版本使用)
