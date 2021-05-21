@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    EnemyBasState currentState;
+
+    public Animator anim;
+    public int animState;
+
     [Header("Movement")]
     public float speed;
 
@@ -12,23 +17,31 @@ public class Enemy : MonoBehaviour
 
     public List<Transform> attackList = new List<Transform>();      //攻击目标的列表
 
-    private BoxCollider2D boxcoll;
+    public PatrolState patrolState = new PatrolState();             //创建巡逻状态对象
+    public AttackState attackState = new AttackState();             //创建攻击状态对象
 
+    public virtual void Init()
+    {
+        anim = GetComponent<Animator>();
+    }
+    public void Awake()
+    {
+        Init();
+    }
     void Start()
     {
-        boxcoll = transform.GetChild(0).GetComponent<BoxCollider2D>();
-        SwitchPoint();
+        TransitionToState(patrolState);
     }
 
-    
     void Update()
     {
-        if (Mathf.Abs(transform.position.x - targetPoint.position.x) < 0.01f)        //是否达到了目标点
-            SwitchPoint();
-
-        MoveToTarget();
-
-
+        currentState.OnUpdate(this);
+        anim.SetInteger("state", animState);        //给动画参数赋值
+    }
+    public void TransitionToState(EnemyBasState state)
+    {
+        currentState = state;
+        currentState.EnterState(this);
     }
     public void MoveToTarget()
     {
@@ -41,10 +54,8 @@ public class Enemy : MonoBehaviour
     {
 
     }
-    public void SkillAction()       //对炸弹使用技能
-    {
+    public virtual void SkillAction() { }       //对炸弹使用技能
 
-    }
     public void FilpDirection()     //进行图片的翻转
     {
         if(transform.position.x < targetPoint.position.x)
