@@ -11,9 +11,14 @@ public class Enemy : MonoBehaviour
 
     [Header("Movement")]
     public float speed;
-
     public Transform pointA,pointB;
     public Transform targetPoint;
+
+    [Header("Attack Settings")]
+    public float attackRate;        //攻击间隔
+    private float nextAttack = 0;   //下次攻击时间
+    public float attackRange, skillRange;       //普通攻击和技能攻击触发范围
+
 
     public List<Transform> attackList = new List<Transform>();      //攻击目标的列表
 
@@ -52,9 +57,28 @@ public class Enemy : MonoBehaviour
     }
     public void AttackAction()      //攻击玩家
     {
-
+        if(Vector2.Distance(transform.position,targetPoint.position) < attackRange)
+        {
+            if(Time.time > nextAttack)
+            {
+                //播放攻击动画
+                anim.SetTrigger("attack");
+                nextAttack = Time.time + attackRate;
+            }
+        }
     }
-    public virtual void SkillAction() { }       //对炸弹使用技能
+    public virtual void SkillAction()       //对炸弹使用技能
+    {
+        if (Vector2.Distance(transform.position, targetPoint.position) < skillRange)
+        {
+            if (Time.time > nextAttack)
+            {
+                //播放攻击动画
+                anim.SetTrigger("skill");
+                nextAttack = Time.time + attackRate;
+            }
+        }
+    }
 
     public void FilpDirection()     //进行图片的翻转
     {
