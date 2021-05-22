@@ -160,4 +160,4 @@ MonoBehaviour:
   downY: -0.3
   targetLayerMask:
     serializedVersion: 2
-    m_Bits: 3584
+    m_Bits: 11776

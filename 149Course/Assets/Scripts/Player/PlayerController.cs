@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour,IDamageable
 {
     private Rigidbody2D rb;
-
+    private Animator anim;
 
 
     public float speed;
     public float jumpForce;
-
+    [Header("Player State")]
+    public float health;
+    public bool isDead;
     [Header("Ground Check")]
     public Transform groundCheck;
     public float checkRadius;
@@ -33,14 +35,24 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
     {
+        anim.SetBool("dead", isDead);       //实时将死亡状态同步到动画中
+        if (isDead)     //如果死亡
+            return;
         CheckInput();
+        
     }
     void FixedUpdate()      //0.02s
     {
+        if (isDead)     //如果死亡
+        {
+            rb.velocity = Vector2.zero;     //速度为0
+            return;
+        }
         PhysicsCheck();             
         Movement();
         Jump();
@@ -109,5 +121,18 @@ public class PlayerController : MonoBehaviour
     public void OnDrawGizmos()  //画出检测范围
     {
         Gizmos.DrawWireSphere(groundCheck.position, checkRadius);
+    }
+
+    public void GetHit(float damage)        //实现接口
+    {   if (!anim.GetCurrentAnimatorStateInfo(1).IsName("player_hit"))   //如果没播放受伤动画
+        {
+            health -= damage;
+            if (health < 1)
+            {
+                health = 0;
+                isDead = true;
+            }
+            anim.SetTrigger("hit");
+        }
     }
 }

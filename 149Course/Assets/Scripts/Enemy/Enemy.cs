@@ -9,6 +9,12 @@ public class Enemy : MonoBehaviour
     public Animator anim;
     public int animState;
 
+    private GameObject alarmSign;
+
+    [Header("Base State")]
+    public float health;
+    public bool isDead;
+
     [Header("Movement")]
     public float speed;
     public Transform pointA,pointB;
@@ -28,6 +34,7 @@ public class Enemy : MonoBehaviour
     public virtual void Init()
     {
         anim = GetComponent<Animator>();
+        alarmSign = transform.GetChild(0).gameObject;       //获取到alarm sign
     }
     public void Awake()
     {
@@ -40,6 +47,9 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
+        anim.SetBool("dead", isDead);       //实时同步死亡状态
+        if(isDead)
+            return;
         currentState.OnUpdate(this);
         anim.SetInteger("state", animState);        //给动画参数赋值
     }
@@ -111,5 +121,18 @@ public class Enemy : MonoBehaviour
     public void OnTriggerExit2D(Collider2D collision)
     {
         attackList.Remove(collision.transform);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //当有敌人出现，播放叹号，播放完消失，使用携程
+        StartCoroutine(onAlarm());
+    }
+    IEnumerator onAlarm()
+    {
+        alarmSign.SetActive(true);      //显示叹号
+        //当动画播放完返回
+        yield return 
+            new WaitForSeconds(alarmSign.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0)[0].clip.length);
+        alarmSign.SetActive(false);
     }
 }

@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Enemy\FSM\EnemyBasState.cs" />
     <Compile Include="Assets\Scripts\Enemy\FSM\PatrolState.cs" />
     <Compile Include="Assets\Scripts\Enemy\HitPoint.cs" />
+    <Compile Include="Assets\Scripts\IDamageable.cs" />
     <Compile Include="Assets\Scripts\Player\JumpFX.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />

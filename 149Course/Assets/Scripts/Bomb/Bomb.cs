@@ -56,6 +56,10 @@ public class Bomb : MonoBehaviour
             {
                 item.GetComponent<Bomb>().TurnOn();
             }
+            if(item.CompareTag("Player") )       //如果是玩家，则收到伤害
+            {
+                item.GetComponent<IDamageable>().GetHit(3);
+            }
         }
     }
     public void DestroyBomb()
