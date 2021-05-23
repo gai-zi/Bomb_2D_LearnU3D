@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
 
     [Header("Attack Settings")]
     public float attackRate;        //攻击间隔
-    private float nextAttack = 0;   //下次攻击时间
+    protected float nextAttack = 0;   //下次攻击时间
     public float attackRange, skillRange;       //普通攻击和技能攻击触发范围
 
 
@@ -77,7 +77,7 @@ public class Enemy : MonoBehaviour
             }
         }
     }
-    public virtual void SkillAction()       //对炸弹使用技能
+    public virtual void SkillAction()       
     {
         if (Vector2.Distance(transform.position, targetPoint.position) < skillRange)
         {

@@ -1,5 +1,5 @@
 ﻿
 public interface IDamageable        //接口
 {
-    void GetHit(float Damage);
+    void GetHit(float damage);
 }
