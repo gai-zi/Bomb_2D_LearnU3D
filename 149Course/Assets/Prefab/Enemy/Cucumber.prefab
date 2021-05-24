@@ -70,6 +70,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a157e724a4c4c4eb689d881ffc0f02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombAviable: 0
+  toBombForce: 0
 --- !u!1 &1977734437621506847
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,7 +148,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1677450459
   m_SortingLayer: 1
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 1e1a51446bc28774fa960fc7682550a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -248,7 +250,6 @@ MonoBehaviour:
   attackRange: 1
   skillRange: 1.5
   attackList: []
-  rb: {fileID: 0}
 --- !u!1 &1977734437630091869
 GameObject:
   m_ObjectHideFlags: 0

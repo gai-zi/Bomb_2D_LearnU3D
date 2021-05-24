@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     [Header("Base State")]
     public float health;
     public bool isDead;
+    public bool hasBomb;
 
     [Header("Movement")]
     public float speed;
@@ -115,7 +116,7 @@ public class Enemy : MonoBehaviour
     }
     public void OnTriggerStay2D(Collider2D collision)  //自带函数
     {
-        if(!attackList.Contains(collision.transform))   //如果没包含这个transform，添加进列表
+        if(!attackList.Contains(collision.transform) && !hasBomb)   //如果没包含这个transform并且没有持有炸弹，添加进列表
             attackList.Add(collision.transform);
     }
     public void OnTriggerExit2D(Collider2D collision)

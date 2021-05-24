@@ -18,9 +18,5 @@ public class BaldPirate : Enemy,IDamageable
     {
         base.Init();        //先运行父类的代码
     }
-    public void KickBomb()    //专属技能：踢走炸弹 Animation Event
-    {
-        
-    }
 
 }

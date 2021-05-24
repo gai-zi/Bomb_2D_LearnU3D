@@ -131,6 +131,7 @@ public class PlayerController : MonoBehaviour,IDamageable
             {
                 health = 0;
                 isDead = true;
+                this.transform.tag = "Untagged";        //更改tag，防止死后一直攻击人物
             }
             anim.SetTrigger("hit");
         }
