@@ -46,7 +46,7 @@ public class Enemy : MonoBehaviour
         TransitionToState(patrolState);
     }
 
-    void Update()
+    public virtual void Update()
     {
         anim.SetBool("dead", isDead);       //实时同步死亡状态
         if(isDead)
@@ -78,7 +78,7 @@ public class Enemy : MonoBehaviour
             }
         }
     }
-    public virtual void SkillAction()       
+    public virtual void SkillAction()      //对炸弹使用技能，每个敌人有不同的方式 
     {
         if (Vector2.Distance(transform.position, targetPoint.position) < skillRange)
         {

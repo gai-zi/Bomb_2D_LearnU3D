@@ -27,7 +27,7 @@ public class AttackState : EnemyBasState
                 }
             }
         }
-        if(enemy.attackList.Count == 1)
+        if(enemy.attackList.Count == 1) 
         {
             enemy.targetPoint = enemy.attackList[0];
         }

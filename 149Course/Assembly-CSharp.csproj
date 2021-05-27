@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Bomb\Bomb.cs" />
     <Compile Include="Assets\Scripts\Enemy\BaldPirate.cs" />
     <Compile Include="Assets\Scripts\Enemy\BigGuy.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Captain.cs" />
     <Compile Include="Assets\Scripts\Enemy\Cucumber.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\FSM\AttackState.cs" />
