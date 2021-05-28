@@ -126,7 +126,8 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //当有敌人出现，播放叹号，播放完消失，使用携程
-        StartCoroutine(onAlarm());
+        if (!isDead)
+            StartCoroutine(onAlarm());
     }
     IEnumerator onAlarm()
     {
