@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 //！！！使用单例模式
 public class UIManager : MonoBehaviour
@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
 
     [Header("UI Elements")]
     public GameObject pauseMenu;
+    public Slider BossHealthBar;
 
 
     public void Awake()
@@ -61,5 +62,21 @@ public class UIManager : MonoBehaviour
         pauseMenu.SetActive(false);
 
         Time.timeScale = 1;
+    }
+    public void ExitGame()
+    {
+        
+    }
+    public void TryAgain()
+    {
+
+    }
+    public void SetBossHealth(float health)
+    {
+        BossHealthBar.maxValue = health;
+    }
+    public void UpdateBossHealth(float health)
+    {
+        BossHealthBar.value = health;
     }
 }
