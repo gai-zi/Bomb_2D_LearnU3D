@@ -36,6 +36,11 @@ public class PlayerController : MonoBehaviour,IDamageable
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        GameManager.instance.IsPlayer(this);        //给单例的GameManger中player赋值
+
+        health = GameManager.instance.LoadHealth();
+        UIManager.instance.UpdateHealth(health);
     }
 
     void Update()
@@ -132,7 +137,6 @@ public class PlayerController : MonoBehaviour,IDamageable
                 health = 0;
                 isDead = true;
                 this.transform.tag = "Untagged";        //更改tag，防止死后一直攻击人物
-                Time.timeScale = 0;
             }
             anim.SetTrigger("hit");
 

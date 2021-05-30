@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Bomb\Bomb.cs" />
+    <Compile Include="Assets\Scripts\Door\Door.cs" />
     <Compile Include="Assets\Scripts\Enemy\BaldPirate.cs" />
     <Compile Include="Assets\Scripts\Enemy\BigGuy.cs" />
     <Compile Include="Assets\Scripts\Enemy\Captain.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\Scripts\Enemy\Whale.cs" />
     <Compile Include="Assets\Scripts\FX\JumpFX.cs" />
     <Compile Include="Assets\Scripts\IDamageable.cs" />
+    <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\Scripts\Manager\UIManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />

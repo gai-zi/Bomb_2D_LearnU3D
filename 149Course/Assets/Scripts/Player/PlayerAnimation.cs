@@ -23,7 +23,7 @@ public class PlayerAnimation : MonoBehaviour
         anim.SetBool("jump", controller.isJump);
         anim.SetBool("ground", controller.isGround);
             
-        if(!controller.isJump && rb.velocity.x!=0)      //显示跑动灰尘特效FX
+        if(anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerRun"))      //显示跑动灰尘特效FX
             transform.GetChild(1).gameObject.SetActive(true);
         else
             transform.GetChild(1).gameObject.SetActive(false);

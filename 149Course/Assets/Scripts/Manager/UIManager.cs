@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour
     [Header("UI Elements")]
     public GameObject pauseMenu;
     public Slider BossHealthBar;
+    public GameObject gameOverPanel;
 
 
     public void Awake()
@@ -63,14 +64,6 @@ public class UIManager : MonoBehaviour
 
         Time.timeScale = 1;
     }
-    public void ExitGame()
-    {
-        
-    }
-    public void TryAgain()
-    {
-
-    }
     public void SetBossHealth(float health)
     {
         BossHealthBar.maxValue = health;
@@ -78,5 +71,9 @@ public class UIManager : MonoBehaviour
     public void UpdateBossHealth(float health)
     {
         BossHealthBar.value = health;
+    }
+    public void GameOverUI(bool playerDead)
+    {
+        gameOverPanel.SetActive(playerDead);
     }
 }

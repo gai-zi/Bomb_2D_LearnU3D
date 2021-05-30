@@ -33,10 +33,11 @@ public class Enemy : MonoBehaviour
     public PatrolState patrolState = new PatrolState();             //创建巡逻状态对象
     public AttackState attackState = new AttackState();             //创建攻击状态对象
 
-    public virtual void Init()
+    public virtual void Init()      //初始化
     {
         anim = GetComponent<Animator>();
         alarmSign = transform.GetChild(0).gameObject;       //获取到alarm sign
+        
     }
     public void Awake()
     {
@@ -45,6 +46,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         TransitionToState(patrolState);
+        GameManager.instance.IsEnemy(this);                 //添加敌人进GameManager列表
         if (isBoss)
             UIManager.instance.SetBossHealth(health);
     }
@@ -52,13 +54,15 @@ public class Enemy : MonoBehaviour
     public virtual void Update()
     {
         anim.SetBool("dead", isDead);       //实时同步死亡状态
-        if(isDead)
-            return;
-        currentState.OnUpdate(this);
-        anim.SetInteger("state", animState);        //给动画参数赋值
-
         if (isBoss)
             UIManager.instance.UpdateBossHealth(health);
+        if (isDead)
+        {
+            GameManager.instance.EnemyDead(this);
+            return;
+        }
+        currentState.OnUpdate(this);
+        anim.SetInteger("state", animState);        //给动画参数赋值
     }
     public void TransitionToState(EnemyBasState state)
     {
@@ -122,7 +126,7 @@ public class Enemy : MonoBehaviour
     }
     public void OnTriggerStay2D(Collider2D collision)  //自带函数
     {
-        if(!attackList.Contains(collision.transform) && !hasBomb)   //如果没包含这个transform并且没有持有炸弹，添加进列表
+        if(!attackList.Contains(collision.transform) && !hasBomb && !isDead && !GameManager.instance.gameOver)   //如果没包含这个transform并且没有持有炸弹，添加进列表
             attackList.Add(collision.transform);
     }
     public void OnTriggerExit2D(Collider2D collision)
@@ -132,7 +136,7 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //当有敌人出现，播放叹号，播放完消失，使用携程
-        if (!isDead)
+        if (!isDead && !GameManager.instance.gameOver)
             StartCoroutine(onAlarm());
     }
     IEnumerator onAlarm()

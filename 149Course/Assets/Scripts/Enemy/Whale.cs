@@ -29,7 +29,7 @@ public class Whale : Enemy, IDamageable
         //身体变大
         transform.localScale *= scale;
         //吐出炸弹
-        if (transform.localScale.y >= 1.5f)
+        if (transform.localScale.y >= 1.9f)
         {
             for (int i = swalowedBombs.Count -1 ; i >= 0; i--)
             {
