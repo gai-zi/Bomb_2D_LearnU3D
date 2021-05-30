@@ -250,7 +250,7 @@ MonoBehaviour:
   targetPoint: {fileID: 0}
   attackRate: 2
   attackRange: 1
-  skillRange: 1.5
+  skillRange: 1.2
   attackList: []
 --- !u!1 &1977734437630091869
 GameObject:

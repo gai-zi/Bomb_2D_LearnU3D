@@ -46,7 +46,7 @@ public class Captain : Enemy, IDamageable
     {
         base.Update();
 
-        if(animState == 0)
+        if(animState == 0 || !anim.GetCurrentAnimatorStateInfo(1).IsName("skill"))
         {
             sprite.flipX = false;
         }

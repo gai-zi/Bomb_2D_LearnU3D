@@ -62,7 +62,7 @@ public class Bomb : MonoBehaviour
             }
         }
     }
-    public void DestroyBomb()
+    public void DestroyBomb()       //Animation Event
     {
         Destroy(gameObject);
     }

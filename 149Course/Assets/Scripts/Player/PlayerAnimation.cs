@@ -16,10 +16,12 @@ public class PlayerAnimation : MonoBehaviour
     }
 
     
-    void Update()
+    void FixedUpdate()
     {
-        anim.SetFloat("speed",Mathf.Abs(rb.velocity.x));
+        //if (velocityY == 0)       //改bug，真正错误原因在Animator中转换条件勾选了Has Exit Time
+        //    velocityY = -0.1f;
         anim.SetFloat("velocityY", rb.velocity.y);
+        anim.SetFloat("speed",Mathf.Abs(rb.velocity.x));
         anim.SetBool("jump", controller.isJump);
         anim.SetBool("ground", controller.isGround);
             

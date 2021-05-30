@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour,IDamageable
 
     void Update()
     {
+
         anim.SetBool("dead", isDead);       //实时将死亡状态同步到动画中
         if (isDead)     //如果死亡
             return;
@@ -67,11 +68,11 @@ public class PlayerController : MonoBehaviour,IDamageable
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
-
         if (horizontalInput != 0)
         {
             transform.localScale = new Vector3(horizontalInput, 1, 1);
         }
+            
     }
 
     void CheckInput()

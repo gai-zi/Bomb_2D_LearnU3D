@@ -435,9 +435,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
   animState: 0
-  health: 15
+  health: 9
   isDead: 0
   hasBomb: 0
+  isBoss: 0
   speed: 2.5
   pointA: {fileID: 1155442682398556107}
   pointB: {fileID: 1155442680978849462}
