@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
     public void EnemyDead(Enemy enemy)
     {
         enemyList.Remove(enemy);
-        if(enemyList.Count == 0 && doorExit!=null)
+        if(enemyList.Count == 0 && doorExit != null)
         {
             doorExit.OpenDoor();
             SaveData();
@@ -64,7 +64,10 @@ public class GameManager : MonoBehaviour
     public void RestartScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        PlayerPrefs.DeleteKey("playerHealth");
+        if(player.health == 0)
+            PlayerPrefs.SetFloat("playerHealth", 1);
+        else
+            PlayerPrefs.SetFloat("playerHealth", player.health);
     }
     public void NextScene()
     {
