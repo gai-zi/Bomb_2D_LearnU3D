@@ -11590,6 +11590,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 740512901, guid: cad2e9acdab1fd542a2a2521934a0364, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6620910474861467303}
+    - target: {fileID: 740512901, guid: cad2e9acdab1fd542a2a2521934a0364, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 1836984391, guid: cad2e9acdab1fd542a2a2521934a0364, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6620910474861467303}
+    - target: {fileID: 1836984391, guid: cad2e9acdab1fd542a2a2521934a0364, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonJump
+      objectReference: {fileID: 0}
     - target: {fileID: 633812360501781528, guid: cad2e9acdab1fd542a2a2521934a0364,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -12348,6 +12364,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1540a8ede4882cf4aad040a517ced931, type: 3}
+--- !u!114 &6620910474861467303 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6620910473498185069, guid: 1540a8ede4882cf4aad040a517ced931,
+    type: 3}
+  m_PrefabInstance: {fileID: 6620910474861467302}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5583b5562e2a1f40ab2d6b8e76af8b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6776254188302639947
 PrefabInstance:
   m_ObjectHideFlags: 0
