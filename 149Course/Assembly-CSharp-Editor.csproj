@@ -275,6 +275,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/PackageCache/com.unity.connect.share@4.2.2/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
@@ -659,8 +662,14 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Play.Publisher.Editor">
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.Play.Publisher.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridgeDev.001">
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
@@ -673,6 +682,9 @@
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
       <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>F:/U3D/____MADE/Bomb_2D_LearnU3D/149Course/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>

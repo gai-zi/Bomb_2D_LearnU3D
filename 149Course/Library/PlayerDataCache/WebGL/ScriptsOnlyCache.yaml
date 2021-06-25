@@ -1,7 +1,6 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AdsButton
     - BaldPirate
     - BigGuy
     - Bomb
@@ -39,23 +38,20 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TintBrushSmooth
     Unity.2D.Tilemap.Extras.dll:
     - UnityEngine.RuleTile
+    Unity.Play.Publisher.Editor.dll:
+    - Unity.Play.Publisher.Editor.AnalyticsHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.Advertisements.dll:
-    - UnityEngine.Advertisements.Placeholder
-    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -146,9 +142,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14624}
     - Class: 114
-      Script: {instanceID: 14730}
-    - Class: 114
-      Script: {instanceID: 27114}
+      Script: {instanceID: 14732}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -257,9 +251,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14624}
     - Class: 114
-      Script: {instanceID: 14730}
-    - Class: 114
-      Script: {instanceID: 27114}
+      Script: {instanceID: 14732}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -366,9 +358,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14624}
     - Class: 114
-      Script: {instanceID: 14730}
-    - Class: 114
-      Script: {instanceID: 27114}
+      Script: {instanceID: 14732}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -477,9 +467,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14624}
     - Class: 114
-      Script: {instanceID: 14730}
-    - Class: 114
-      Script: {instanceID: 27114}
+      Script: {instanceID: 14732}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -586,9 +574,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14624}
     - Class: 114
-      Script: {instanceID: 14730}
-    - Class: 114
-      Script: {instanceID: 27114}
+      Script: {instanceID: 14732}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -653,7 +639,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11200}
+      Script: {instanceID: 11198}
     - Class: 114
       Script: {instanceID: 11224}
     - Class: 114
@@ -689,7 +675,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14624}
     - Class: 114
-      Script: {instanceID: 14730}
+      Script: {instanceID: 14732}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -719,16 +705,16 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 7072231382eb3c4871b3dd75ad0227e1
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Slider
-  - hash:
-      serializedVersion: 2
       Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 7072231382eb3c4871b3dd75ad0227e1
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
   - hash:
       serializedVersion: 2
       Hash: ce669872a2be11bc686ea22961d8a3bb
@@ -1431,12 +1417,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 87f29a95dd4a3c755fabf59d3870b8b7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AdsButton
   platform: 20
   scenePathNames:
   - Assets/Scenes/Main.unity
@@ -1445,4 +1425,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level3.unity
   - Assets/Scenes/Level4.unity
   - Assets/Scenes/Level_Boss.unity
-  playerPath: C:/Users/lenovo/Desktop/123
+  playerPath: C:/Users/lenovo/Desktop/BombGuy

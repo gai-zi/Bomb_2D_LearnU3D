@@ -70,15 +70,15 @@ public class PlayerController : MonoBehaviour,IDamageable
         //键盘操作
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         //操作杆
-        horizontalInput = joystick.Horizontal;
+        //horizontalInput = joystick.Horizontal;
         rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
 
-        //if (horizontalInput != 0)
-        //    transform.localScale = new Vector3(horizontalInput, 1, 1);
-        if (horizontalInput > 0)
-            transform.eulerAngles = new Vector3(0, 0, 0);
-        else if (horizontalInput < 0)
-            transform.eulerAngles = new Vector3(0, 180, 0);
+        if (horizontalInput != 0)
+            transform.localScale = new Vector3(horizontalInput, 1, 1);
+        //if (horizontalInput > 0)
+        //    transform.eulerAngles = new Vector3(0, 0, 0);
+        //else if (horizontalInput < 0)
+        //    transform.eulerAngles = new Vector3(0, 180, 0);
 
             
     }
