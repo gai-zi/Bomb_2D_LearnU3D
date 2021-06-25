@@ -55,7 +55,7 @@ Play it Online：[BombGuy - Unity Play](https://play.unity.com/mg/other/bombguy-
 
 ## UML
 
-![image-20210625161041775](https://github.com/gai-zi/Bomb_2D_LearnU3D/images/BombGuy_UML.png)
+![image](https://github.com/gai-zi/Bomb_2D_LearnU3D/blob/47bd5f02b9dcdddda782c2ed8ce7a6a375b005de/images/BombGuy_UML.png)
 
 ---
 
