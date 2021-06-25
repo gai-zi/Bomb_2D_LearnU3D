@@ -55,7 +55,7 @@ Play it Online：[BombGuy - Unity Play](https://play.unity.com/mg/other/bombguy-
 
 ## UML
 
-![image-20210625161041775](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20210625161041775.png)
+![image-20210625161041775](https://github.com/gai-zi/Bomb_2D_LearnU3D/images/BombGuy_UML.png)
 
 ---
 
